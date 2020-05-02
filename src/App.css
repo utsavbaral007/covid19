@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
+	text-align: center;
+}
+body {
+	background: #eee;
+	font-family: sans-serif;
+}
+.row {
+	display: flex;
+	width: 90%;
+	flex-direction: row;
+	margin: 0 auto;
+	background: #fff;
+	justify-content: space-evenly;
+	border-bottom: 4px solid orangered;
+}
+.NewConfirmed,
+.TotalConfirmed,
+.NewDeaths,
+.TotalDeaths,
+.NewRecovered,
+.TotalRecovered {
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+.NewConfirmed {
+	color: orangered;
+}
+.TotalConfirmed {
+	color: blueviolet;
+}
+.NewDeaths {
+	color: greenyellow;
+}
+.TotalDeaths {
+	color: skyblue;
+}
+.NewRecovered {
+	color: gold;
+}
+.TotalRecovered {
+	color: royalblue;
+}
+table {
+	border-collapse: separate;
+	margin: 0 auto;
+	width: 90%;
+	border-spacing: 0 12px;
+}
+table thead tr {
+	background: #fff;
+}
+table thead tr th {
+	padding: 12px;
+	text-align: left;
+}
+table tbody tr {
+	background: #fff;
+}
+table tbody tr td {
+	padding: 12px;
+	text-align: left;
+}
+.pagination {
+	display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pagination a {
+	/* position: fixed; */
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination a:hover {
+	background-color: #ddd;
+	border-radius: 5px;
 }
