@@ -16,7 +16,6 @@ export default function Pagination(props) {
 					onClick={() => {
 						props.paginate(numbers)
 					}}
-					href="!#"
 				>
 					{numbers}
 				</a>
